@@ -1,0 +1,23 @@
+person:
+  name: ${random.value}
+  age: ${random.int}
+  address: hebei@qq.com
+  birth-day: 1998/02/12
+  family:
+    father: ${random.uuid}
+    mom: what
+  love:
+    - eat
+    - ${person.what:默认值}
+    - ${person.family.mom}
+test: 测试属性
+
+
+
+#person.name=guzx
+#person.age=23
+#person.address=hunan
+#person.birthday=1997/07/12
+#person.family.father=guwg
+#person.family.mom=zhoucf
+#person.love=read,song

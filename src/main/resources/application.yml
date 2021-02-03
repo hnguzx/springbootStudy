@@ -11,6 +11,37 @@ person:
     - ${person.what:默认值}
     - ${person.family.mom}
 test: 测试属性
+spring:
+  profiles:
+    active: prod
+logging:
+  file:
+    name: F:\logs\mylog.log
+  level:
+    root: warn
+    cn:
+      guzx: trace
+    org.springframework: warn
+#debug: true
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+server:
+  port: 85
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+server:
+  port: 86
+---
+spring:
+  config:
+    activate:
+      on-profile: test
 
 #person.name=guzx
 #person.age=23

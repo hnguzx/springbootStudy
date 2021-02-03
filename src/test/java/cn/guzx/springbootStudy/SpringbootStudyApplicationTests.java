@@ -17,7 +17,7 @@ class SpringbootStudyApplicationTests {
 	@Value("${test}")
 	String test;
 
-	@Value("${chineseTest}")
+//	@Value("${chineseTest}")
 	String chineseTest;
 
 	Logger logger = LoggerFactory.getLogger(getClass());
